@@ -50,8 +50,8 @@ img {
     text-align: center;
 }
 
-/* Menú de navegación con Flexbox */
-/* Utilizamos Flexbox para alinear los elementos del menú horizontalmente */
+
+/* Se usó Flexbox para alinear los elementos del menú horizontalmente */
 .menu-nav {
     display: flex;
     justify-content: center;
@@ -78,7 +78,7 @@ img {
 }
 
 
-/* PIE DE PÁGINA */
+/* Pie de página */
 .pie-pagina {
     text-align: center;
     padding: 20px 10px;
@@ -90,7 +90,7 @@ img {
 }
 
 
-/* PÁGINA DE INICIO */
+/* Página de inicio*/
 .seccion-principal {
     text-align: center;
     padding: 40px 0;
@@ -112,7 +112,7 @@ img {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilo para la figura */
+
 .cita-destacada {
     margin: 30px 0;
     padding: 20px;
@@ -132,12 +132,12 @@ figcaption {
     color: #7f8c8d;
 }
 
-/* PÁGINA SOBRE MÍ */
+/* Sobre mi */
 .seccion-sobre-mi {
     padding: 20px 0;
 }
 
-/* Usando Flexbox para el contenido "Sobre mí" */
+
 .contenedor-biografia {
     display: flex;
     flex-wrap: wrap;
@@ -164,7 +164,7 @@ figcaption {
     margin-bottom: 15px;
 }
 
-/* Tabla de intereses */
+/* Tabla  */
 .seccion-intereses {
     margin-top: 40px;
 }
