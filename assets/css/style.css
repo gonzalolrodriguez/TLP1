@@ -1,0 +1,397 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-image: url('assets/img/background.png');
+
+    
+}
+
+h1, h2, h3 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #2980b9;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ENCABEZADO Y NAVEGACIÓN */
+.encabezado {
+    padding: 20px 0;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.nombre-principal {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+/* Menú de navegación con Flexbox */
+/* Utilizamos Flexbox para alinear los elementos del menú horizontalmente */
+.menu-nav {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 20px;
+}
+
+.menu-nav li {
+    margin: 0 15px;
+}
+
+.menu-nav a {
+    display: block;
+    padding: 10px 15px;
+    font-weight: bold;
+    color: #555;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.menu-nav a:hover, .menu-nav a.activo {
+    background-color: #3498db;
+    color: #fff;
+}
+
+
+/* PIE DE PÁGINA */
+.pie-pagina {
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 50px;
+    border-top: 1px solid #eaeaea;
+    color: #2f3030;
+    font-size: 0.95rem;
+    word-wrap: break-word;
+}
+
+
+/* PÁGINA DE INICIO */
+.seccion-principal {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.contenedor-principal {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.foto-perfil {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 20px auto;
+    display: block;
+    border: 5px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para la figura */
+.cita-destacada {
+    margin: 30px 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-left: 4px solid #3498db;
+}
+
+blockquote p {
+    font-style: italic;
+    font-size: 1.2em;
+}
+
+figcaption {
+    text-align: right;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #7f8c8d;
+}
+
+/* PÁGINA SOBRE MÍ */
+.seccion-sobre-mi {
+    padding: 20px 0;
+}
+
+/* Usando Flexbox para el contenido "Sobre mí" */
+.contenedor-biografia {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.foto-biografia {
+    min-width: 2px;
+    max-width: 2px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+    margin: 0 auto;
+    display: block;
+}
+
+.texto-biografia {
+    flex: 2;
+    min-width: 300px;
+}
+
+.texto-biografia p {
+    margin-bottom: 15px;
+}
+
+/* Tabla de intereses */
+.seccion-intereses {
+    margin-top: 40px;
+}
+
+.tabla-intereses {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tabla-intereses th, .tabla-intereses td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.tabla-intereses th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.tabla-intereses tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* PÁGINA DE PROYECTOS */
+.seccion-proyectos {
+    padding: 20px 0;
+}
+
+/* Utilizando CSS Grid para la sección de proyectos */
+/* CSS Grid nos permite crear un diseño de cuadrícula para las tarjetas de proyectos
+   con una disposición responsive que se ajusta automáticamente según el ancho disponible */
+.cuadricula-proyectos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.tarjeta-proyecto {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tarjeta-proyecto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.imagen-proyecto {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.titulo-proyecto {
+    padding: 15px 15px 0;
+    font-size: 1.3rem;
+}
+
+.descripcion-proyecto {
+    padding: 0 15px;
+    margin-bottom: 15px;
+    color: #666;
+}
+
+.boton-ver {
+    display: inline-block;
+    background-color: #3498db;
+    color: #fff;
+    padding: 8px 15px;
+    margin: 0 15px 15px;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.boton-ver:hover {
+    background-color: #2980b9;
+    color: #fff;
+}
+
+/* PÁGINA DE CONTACTO */
+.seccion-contacto {
+    padding: 20px 0;
+}
+
+/* Contenedor para formulario e información - Usando Flexbox */
+/* Utilizamos Flexbox para organizar el formulario y la información adicional de contacto */
+.contenedor-contacto {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+/* Estilo del formulario */
+.formulario-contacto {
+    flex: 1;
+    min-width: 300px;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.grupo-formulario {
+    margin-bottom: 20px;
+}
+
+.etiqueta-campo {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.campo-texto {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+textarea.campo-texto {
+    resize: vertical;
+}
+
+.boton-enviar {
+    display: inline-block;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.boton-enviar:hover {
+    background-color: #2980b9;
+}
+
+/* Información de contacto */
+.info-contacto {
+    flex: 1;
+    min-width: 300px;
+}
+
+.detalles-adicionales {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.resumen-detalles {
+    font-weight: bold;
+    padding: 10px 0;
+    cursor: pointer;
+    color: #3498db;
+}
+
+.info-adicional {
+    margin-top: 15px;
+}
+
+.info-adicional p {
+    margin-bottom: 10px;
+}
+
+.enlaces-sociales {
+    margin-top: 20px;
+}
+
+.lista-redes {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.lista-redes li {
+    margin-bottom: 8px;
+}
+
+.enlace-red {
+    color: #3498db;
+    font-weight: bold;
+}
+
+.enlace-red:hover {
+    text-decoration: underline;
+}
+
+/* DISEÑO RESPONSIVE */
+@media (max-width: 768px) {
+    .menu-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .menu-nav li {
+        margin: 5px 0;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .contenedor-biografia, .contenedor-contacto {
+        flex-direction: column;
+    }
+    
+    .foto-biografia, .formulario-contacto, .info-contacto {
+        margin: 0 auto;
+    }
+}
+
+
+/* Ajustes adicionales para pantallas pequeñas */
+@media (max-width: 480px) {
+    .pie-pagina {
+        font-size: 0.85rem;
+        padding: 15px 5px;
+    }
+}
